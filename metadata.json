@@ -1,0 +1,6 @@
+{
+  "name": "Skybridge",
+  "description": "Skybridge Android application converted to 100% Kotlin with offline client architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

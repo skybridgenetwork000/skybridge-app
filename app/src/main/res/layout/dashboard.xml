@@ -1,0 +1,445 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="15dp"
+		android:paddingTop="10dp"
+		android:paddingRight="15dp"
+		android:background="#000000"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginBottom="10dp"
+			android:paddingLeft="4dp"
+			android:paddingRight="4dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear23"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview24"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/app_name"
+					android:textSize="17sp"
+					android:textColor="#E0E0E0" />
+			</LinearLayout>
+			<ImageView
+				android:id="@+id/imageview2"
+				android:layout_width="30dp"
+				android:layout_height="35dp"
+				android:padding="2dp"
+				android:src="@drawable/icon_segment_round"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+		<com.skybridg.linexware.app.LottieSwipeRefreshLayout
+			android:id="@+id/swipe"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<ScrollView
+				android:id="@+id/vscroll1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="2dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginRight="2dp"
+						android:layout_marginBottom="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="10dp"
+							android:paddingTop="10dp"
+							android:paddingRight="10dp"
+							android:background="#212121"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<LinearLayout
+								android:id="@+id/linear11"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal"
+								android:layout_weight="1">
+								<TextView
+									android:id="@+id/textview7"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="Mining Status"
+									android:textSize="13sp"
+									android:textColor="#EEEEEE"
+									android:layout_weight="1" />
+								<TextView
+									android:id="@+id/textview6"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:paddingLeft="8dp"
+									android:paddingTop="4dp"
+									android:paddingRight="8dp"
+									android:paddingBottom="4dp"
+									android:background="#00E676"
+									android:text="• Active"
+									android:textSize="12sp"
+									android:textColor="#00E676" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear9"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal">
+								<LinearLayout
+									android:id="@+id/linear4"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:gravity="center_horizontal|bottom"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/balance_big_text"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="-"
+										android:textSize="28sp"
+										android:textColor="#FFFFFF" />
+									<TextView
+										android:id="@+id/balance_small_text"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text=".---"
+										android:textSize="20sp"
+										android:textColor="#9E9E9E" />
+									<TextView
+										android:id="@+id/textview4"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginLeft="3dp"
+										android:text="sB"
+										android:textSize="18sp"
+										android:textColor="#BDBDBD" />
+								</LinearLayout>
+								<ImageView
+									android:id="@+id/visible_hide_icon"
+									android:layout_width="25dp"
+									android:layout_height="20dp"
+									android:layout_marginLeft="5dp"
+									android:src="@drawable/icon_visibility_round"
+									android:scaleType="fitCenter" />
+							</LinearLayout>
+							<TextView
+								android:id="@+id/textview5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_marginBottom="10dp"
+								android:text="Total balance"
+								android:textSize="13sp"
+								android:textColor="#E0E0E0" />
+							<LinearLayout
+								android:id="@+id/line"
+								android:layout_width="match_parent"
+								android:layout_height="1dp"
+								android:layout_marginLeft="10dp"
+								android:layout_marginRight="10dp"
+								android:layout_marginBottom="3dp"
+								android:padding="8dp"
+								android:background="#0E0E0E"
+								android:orientation="horizontal" />
+							<LinearLayout
+								android:id="@+id/linear10"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:layout_weight="1">
+								<LinearLayout
+									android:id="@+id/linear12"
+									android:layout_width="100dp"
+									android:layout_height="60dp"
+									android:layout_margin="6dp"
+									android:padding="8dp"
+									android:background="#0E0E0E"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="vertical"
+									android:layout_weight="1">
+									<TextView
+										android:id="@+id/current_price_text"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginBottom="5dp"
+										android:text="-"
+										android:textSize="13sp"
+										android:textColor="#E0E0E0" />
+									<TextView
+										android:id="@+id/textview10"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Current Price"
+										android:textSize="10sp"
+										android:textColor="#757575" />
+								</LinearLayout>
+								<LinearLayout
+									android:id="@+id/linear13"
+									android:layout_width="100dp"
+									android:layout_height="60dp"
+									android:layout_margin="6dp"
+									android:padding="8dp"
+									android:background="#0E0E0E"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="vertical"
+									android:layout_weight="1">
+									<TextView
+										android:id="@+id/total_supply_text"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginBottom="5dp"
+										android:text="30m sB"
+										android:textSize="13sp"
+										android:textColor="#E0E0E0" />
+									<TextView
+										android:id="@+id/textview12"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Totally Supply"
+										android:textSize="10sp"
+										android:textColor="#757575" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear7"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:paddingLeft="10dp"
+						android:paddingTop="10dp"
+						android:paddingRight="10dp"
+						android:background="@android:color/transparent"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview13"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="4dp"
+							android:layout_marginRight="4dp"
+							android:paddingLeft="10dp"
+							android:paddingTop="5dp"
+							android:paddingRight="10dp"
+							android:paddingBottom="5dp"
+							android:background="#212121"
+							android:gravity="center_horizontal"
+							android:text="Mining System"
+							android:textSize="11sp"
+							android:textColor="#E0E0E0"
+							android:layout_gravity="center_horizontal" />
+						<LinearLayout
+							android:id="@+id/linear18"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="2dp"
+							android:paddingTop="10dp"
+							android:paddingRight="4dp"
+							android:paddingBottom="10dp"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview17"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:text="Rate"
+								android:textSize="14sp"
+								android:textColor="#9E9E9E"
+								android:layout_weight="1" />
+							<TextView
+								android:id="@+id/mining_rate"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="8dp"
+								android:background="@android:color/transparent"
+								android:text="0.0035 sB/h"
+								android:textSize="14sp"
+								android:textColor="#E0E0E0" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear19"
+							android:layout_width="match_parent"
+							android:layout_height="65dp"
+							android:layout_marginTop="8dp"
+							android:layout_marginBottom="8dp"
+							android:paddingLeft="8dp"
+							android:paddingTop="5dp"
+							android:paddingRight="5dp"
+							android:paddingBottom="5dp"
+							android:background="#212121"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<LinearLayout
+								android:id="@+id/linear20"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="8dp"
+								android:layout_marginRight="8dp"
+								android:layout_marginBottom="8dp"
+								android:background="@android:color/transparent"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="vertical">
+								<TextView
+									android:id="@+id/current_mining_count"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginBottom="2dp"
+									android:text="+0.0577 sb"
+									android:textSize="13sp"
+									android:textColor="#E0E0E0" />
+								<TextView
+									android:id="@+id/textview23"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="Mining Balance"
+									android:textSize="10sp"
+									android:textColor="#757575" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear21"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="vertical"
+								android:layout_weight="1" />
+							<TextView
+								android:id="@+id/mining_button_text"
+								android:layout_width="120dp"
+								android:layout_height="match_parent"
+								android:layout_margin="4dp"
+								android:paddingLeft="8dp"
+								android:paddingTop="4dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="4dp"
+								android:background="#0E0E0E"
+								android:gravity="center_horizontal|center_vertical"
+								android:text="Start Mining"
+								android:textSize="12sp"
+								android:textColor="#EEEEEE" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linCaro"
+						android:layout_width="match_parent"
+						android:layout_height="130dp"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:orientation="horizontal" />
+					<LinearLayout
+						android:id="@+id/linear24"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:padding="8dp"
+						android:background="#212121"
+						android:orientation="vertical">
+						<LinearLayout
+							android:id="@+id/linear25"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="2dp"
+							android:paddingTop="10dp"
+							android:paddingRight="4dp"
+							android:paddingBottom="10dp"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview26"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:text="About Skybridge Network "
+								android:textSize="15sp"
+								android:textColor="#EEEEEE"
+								android:layout_weight="1" />
+							<ImageView
+								android:id="@+id/imageview4"
+								android:layout_width="25dp"
+								android:layout_height="25dp"
+								android:src="@drawable/icon_keyboard_arrow_up_round"
+								android:scaleType="fitCenter" />
+						</LinearLayout>
+						<TextView
+							android:id="@+id/text"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:padding="8dp"
+							android:background="#0E0E0E"
+							android:text="_-_"
+							android:textSize="12sp"
+							android:textColor="#E0E0E0" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview27"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20dp"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Stay Updated On"
+						android:textSize="12sp"
+						android:textColor="#BDBDBD" />
+					<LinearLayout
+						android:id="@+id/linear26"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/imageview5"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:src="@drawable/social_1"
+							android:scaleType="fitCenter" />
+						<ImageView
+							android:id="@+id/imageview6"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:layout_marginLeft="8dp"
+							android:layout_marginRight="8dp"
+							android:src="@drawable/social_2"
+							android:scaleType="fitCenter" />
+						<ImageView
+							android:id="@+id/imageview7"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:src="@drawable/social_3"
+							android:scaleType="fitCenter" />
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</com.skybridg.linexware.app.LottieSwipeRefreshLayout>
+	</LinearLayout>
+</LinearLayout>
